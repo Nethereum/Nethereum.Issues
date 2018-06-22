@@ -1,4 +1,5 @@
-﻿using Net.Issues.Console.NatCoin;
+﻿using Net.Issues.Console.CallAnotherContractSample;
+using Net.Issues.Console.NatCoin;
 
 namespace Net.Issues.Console
 {
@@ -6,7 +7,8 @@ namespace Net.Issues.Console
     {
         static void Main(string[] args)
         {
-            new NatCoinIssue().RunAsync().Wait();
+            //new NatCoinIssue().RunAsync().Wait();
+            new CallAnotherContract().RunAsync().Wait();
         }
     }
 }
