@@ -8,7 +8,8 @@ namespace Net.Issues.Console
         static void Main(string[] args)
         {
             //new NatCoinIssue().RunAsync().Wait();
-            new CallAnotherContract().RunAsync().Wait();
+            //new CallAnotherContract().RunAsync().Wait();
+            new ConstructorSample().RunAsync().Wait();
         }
     }
 }
