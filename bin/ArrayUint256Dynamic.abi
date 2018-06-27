@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[],"name":"GiveMeTheArray","outputs":[{"name":"result","type":"uint256[]"}],"payable":false,"stateMutability":"pure","type":"function"}]

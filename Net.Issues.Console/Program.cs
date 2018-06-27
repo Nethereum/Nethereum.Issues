@@ -1,4 +1,5 @@
 ﻿using Net.Issues.Console.CallAnotherContractSample;
+using Net.Issues.Console.LoadKeyStoreFile;
 using Net.Issues.Console.NatCoin;
 
 namespace Net.Issues.Console
@@ -9,7 +10,9 @@ namespace Net.Issues.Console
         {
             //new NatCoinIssue().RunAsync().Wait();
             //new CallAnotherContract().RunAsync().Wait();
-            new ConstructorSample().RunAsync().Wait();
+            //new ConstructorSample().RunAsync().Wait();
+            new LoadAccountFromKeyStoreSample().GethAccount().Wait();
+            //new ArrayUint256DynamicSample().RunAsync().Wait();
         }
     }
 }

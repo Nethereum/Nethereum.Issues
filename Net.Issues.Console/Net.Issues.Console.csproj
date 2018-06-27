@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Nethereum.Geth" Version="2.5.2-CI-20180627-120319" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Net.Issues.Contracts\Net.Contracts.csproj" />
   </ItemGroup>
 
