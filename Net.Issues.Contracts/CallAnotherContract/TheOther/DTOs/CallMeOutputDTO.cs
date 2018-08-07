@@ -6,7 +6,7 @@ using Nethereum.ABI.FunctionEncoding.Attributes;
 namespace SolidityCallAnotherContract.Contracts.TheOther.DTOs
 {
     [FunctionOutput]
-    public class CallMeOutputDTO
+    public class CallMeOutputDTO:IFunctionOutputDTO
     {
         [Parameter("bytes", "test", 1)]
         public byte[] Test {get; set;}

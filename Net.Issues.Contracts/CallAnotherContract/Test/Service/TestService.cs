@@ -10,6 +10,7 @@ using System.Threading;
 using SolidityCallAnotherContract.Contracts.Test.CQS;
 using SolidityCallAnotherContract.Contracts.Test.DTOs;
 using System.Collections.Generic;
+using Nethereum.Contracts.ContractHandlers;
 
 namespace SolidityCallAnotherContract.Contracts.Test.Service
 {

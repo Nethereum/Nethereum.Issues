@@ -9,6 +9,8 @@ using Nethereum.Contracts.CQS;
 using System.Threading;
 using Net.Issues.Contracts.Constructor10.CQS;
 using Net.Issues.Contracts.Constructor10.DTOs;
+using Nethereum.Contracts.ContractHandlers;
+
 namespace Net.Issues.Contracts.Constructor10.Service
 {
 

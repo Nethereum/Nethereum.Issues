@@ -1,11 +1,12 @@
 using System.Numerics;
 using Nethereum.ABI.FunctionEncoding.Attributes;
+using Nethereum.Contracts;
 using Nethereum.Contracts.CQS;
 
 namespace Net.Contracts.NatCoin.CQS
 {
     [Function("createUserNatCoins")]
-    public class CreateUserNatCoinsFunction:ContractMessage
+    public class CreateUserNatCoinsFunction:FunctionMessage
     {
         [Parameter("uint256", "id", 1)]
         public BigInteger Id {get; set;}

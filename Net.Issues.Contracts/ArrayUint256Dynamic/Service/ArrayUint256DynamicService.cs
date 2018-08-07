@@ -10,6 +10,8 @@ using Nethereum.Contracts.CQS;
 using System.Threading;
 using Net.Issues.Contracts.ArrayUint256Dynamic.CQS;
 using Net.Issues.Contracts.ArrayUint256Dynamic.DTOs;
+using Nethereum.Contracts.ContractHandlers;
+
 namespace Net.Issues.Contracts.ArrayUint256Dynamic.Service
 {
 

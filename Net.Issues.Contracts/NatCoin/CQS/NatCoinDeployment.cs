@@ -1,3 +1,4 @@
+using Nethereum.Contracts;
 using Nethereum.Contracts.CQS;
 
 namespace Net.Contracts.NatCoin.CQS

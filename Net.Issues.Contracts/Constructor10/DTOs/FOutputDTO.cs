@@ -6,7 +6,7 @@ using Nethereum.ABI.FunctionEncoding.Attributes;
 namespace Net.Issues.Contracts.Constructor10.DTOs
 {
     [FunctionOutput]
-    public class FOutputDTO
+    public class FOutputDTO:IFunctionOutputDTO
     {
         [Parameter("uint256", "", 1)]
         public BigInteger B {get; set;}

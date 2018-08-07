@@ -7,7 +7,7 @@ using Nethereum.ABI.FunctionEncoding.Attributes;
 namespace Net.Issues.Contracts.ArrayUint256Dynamic.DTOs
 {
     [FunctionOutput]
-    public class GiveMeTheArrayOutputDTO
+    public class GiveMeTheArrayOutputDTO:IFunctionOutputDTO
     {
         [Parameter("uint256[]", "result", 1)]
         public List<BigInteger> Result {get; set;}

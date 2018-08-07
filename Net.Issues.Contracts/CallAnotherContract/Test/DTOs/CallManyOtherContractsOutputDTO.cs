@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace SolidityCallAnotherContract.Contracts.Test.DTOs
 {
     [FunctionOutput]
-    public class CallManyOtherContractsOutputDTO
+    public class CallManyOtherContractsOutputDTO:IFunctionOutputDTO
     {
         [Parameter("bytes[10]", "result", 1)]
         public List<byte[]> Result {get; set;}
