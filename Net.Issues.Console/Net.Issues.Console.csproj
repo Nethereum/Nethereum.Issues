@@ -6,15 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nethereum.Geth" Version="3.0.0-rc1" />
+    <PackageReference Include="Nethereum.Geth" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Net.Issues.Contracts\Net.Contracts.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="PendingTransactionsSample\" />
   </ItemGroup>
 
 </Project>
