@@ -15,7 +15,8 @@ namespace Net.Issues.Console
             //new LoadAccountFromKeyStoreSample().GethAccount().Wait();
             //new ArrayUint256DynamicSample().RunAsync().Wait();
             //new PendingTransactionsSample().RunAsync().Wait();
-            new StructReturnDataSample().RunAsync().Wait();
+            //new StructReturnDataSample().RunAsync().Wait();
+            new ProxySample().RunAsync().Wait();
         }
     }
 }
