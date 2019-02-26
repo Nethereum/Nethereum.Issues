@@ -1,4 +1,5 @@
 ﻿using Net.Issues.Console.CallAnotherContractSample;
+using Net.Issues.Console.Events;
 using Net.Issues.Console.LoadKeyStoreFile;
 using Net.Issues.Console.NatCoin;
 using Net.Issues.Console.StructReturnData;
@@ -16,7 +17,8 @@ namespace Net.Issues.Console
             //new ArrayUint256DynamicSample().RunAsync().Wait();
             //new PendingTransactionsSample().RunAsync().Wait();
             //new StructReturnDataSample().RunAsync().Wait();
-            new ProxySample().RunAsync().Wait();
+            //new ProxySample().RunAsync().Wait();
+            new EventsSample().RunAsync().Wait();
         }
     }
 }
