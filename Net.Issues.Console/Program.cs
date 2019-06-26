@@ -3,6 +3,7 @@ using Net.Issues.Console.Events;
 using Net.Issues.Console.LoadKeyStoreFile;
 using Net.Issues.Console.NatCoin;
 using Net.Issues.Console.StructReturnData;
+using Net.Issues.Console.Erc20BalanceCheckerSample;
 
 namespace Net.Issues.Console
 {
@@ -18,7 +19,10 @@ namespace Net.Issues.Console
             //new PendingTransactionsSample().RunAsync().Wait();
             //new StructReturnDataSample().RunAsync().Wait();
             //new ProxySample().RunAsync().Wait();
-            new EventsSample().RunAsync().Wait();
+            //new EventsSample().RunAsync().Wait();
+            new Erc20BalanceChecker().RunAsync().Wait();
+
+            
         }
     }
 }
