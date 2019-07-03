@@ -4,6 +4,7 @@ using Net.Issues.Console.LoadKeyStoreFile;
 using Net.Issues.Console.NatCoin;
 using Net.Issues.Console.StructReturnData;
 using Net.Issues.Console.Erc20BalanceCheckerSample;
+using Net.Issues.Console.FindTransactionsForAddress;
 
 namespace Net.Issues.Console
 {
@@ -20,7 +21,8 @@ namespace Net.Issues.Console
             //new StructReturnDataSample().RunAsync().Wait();
             //new ProxySample().RunAsync().Wait();
             //new EventsSample().RunAsync().Wait();
-            new Erc20BalanceChecker().RunAsync().Wait();
+            //new Erc20BalanceChecker().RunAsync().Wait();
+            new FindTransacactionsForAddress().RunAsync().Wait();
 
             
         }
