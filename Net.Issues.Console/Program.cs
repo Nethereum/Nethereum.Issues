@@ -17,12 +17,12 @@ namespace Net.Issues.Console
             //new ConstructorSample().RunAsync().Wait();
             //new LoadAccountFromKeyStoreSample().GethAccount().Wait();
             //new ArrayUint256DynamicSample().RunAsync().Wait();
-            //new PendingTransactionsSample().RunAsync().Wait();
+            new PendingTransactionsSample().RunAsync().Wait();
             //new StructReturnDataSample().RunAsync().Wait();
             //new ProxySample().RunAsync().Wait();
             //new EventsSample().RunAsync().Wait();
             //new Erc20BalanceChecker().RunAsync().Wait();
-            new FindTransacactionsForAddress().RunAsync().Wait();
+            //new FindTransacactionsForAddress().RunAsync().Wait();
 
             
         }

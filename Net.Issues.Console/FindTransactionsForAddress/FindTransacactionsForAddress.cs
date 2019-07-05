@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Net.Issues.Console.FindTransactionsForAddress
@@ -15,14 +14,21 @@ namespace Net.Issues.Console.FindTransactionsForAddress
         public async Task RunAsync()
         {
             const string Address = "0x195a07037E97Cd576Ce320bC7fBFBB41D8898b01";
-            var startingBlock = new BigInteger(4668133);
             var web3 = new Web3("https://rinkeby.infura.io/v3/7238211010344719ad14a89db874158c");
 
-            var endingBlockNumber = await web3.Eth.Blocks.GetBlockNumber.SendRequestAsync();
+            //we're using a known starting block
+            var startingBlock = new BigInteger(4668133);
+
+            //get the current block on the chain and use this as the ending block
+            var endingBlock = await web3.Eth.Blocks.GetBlockNumber.SendRequestAsync();
+
+            //initialise the block we'll increment in our loop
             var currentBlockNumber = startingBlock;
+
+            //somewhere to put matching transactions
             List<Transaction> matchingTransactionList = new List<Transaction>();
 
-            while (currentBlockNumber <= endingBlockNumber.Value)
+            while (currentBlockNumber <= endingBlock.Value)
             {
                 System.Console.WriteLine($"Requesting transactions for block: {currentBlockNumber}");
                 var blockWithTransactions = await web3.Eth.Blocks.GetBlockWithTransactionsByNumber.SendRequestAsync(new HexBigInteger(currentBlockNumber));
