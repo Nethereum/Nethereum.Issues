@@ -5,6 +5,7 @@ using Net.Issues.Console.NatCoin;
 using Net.Issues.Console.StructReturnData;
 using Net.Issues.Console.Erc20BalanceCheckerSample;
 using Net.Issues.Console.FindTransactionsForAddress;
+using Net.Issues.Console.PayableEtherTransferSample;
 using Net.Issues.Console.CallingOnlyOwnerFunction;
 
 namespace Net.Issues.Console
@@ -25,8 +26,7 @@ namespace Net.Issues.Console
             //new Erc20BalanceChecker().RunAsync().Wait();
             //new FindTransacactionsForAddress().RunAsync().Wait();
             new CallingOnlyOwnerFunctionSample().RunAsync().Wait();
-
-
+            //new PayableEtherTransfer().RunAsync().Wait();            
         }
     }
 }

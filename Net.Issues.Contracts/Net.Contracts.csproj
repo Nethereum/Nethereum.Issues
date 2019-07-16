@@ -7,5 +7,9 @@
     <ItemGroup>
         <PackageReference Include="Nethereum.Web3" Version="3.0.0" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="PayableEtherTransfer\" />
+    </ItemGroup>
     
 </Project>
