@@ -5,6 +5,7 @@ using Net.Issues.Console.NatCoin;
 using Net.Issues.Console.StructReturnData;
 using Net.Issues.Console.Erc20BalanceCheckerSample;
 using Net.Issues.Console.FindTransactionsForAddress;
+using Net.Issues.Console.CallingOnlyOwnerFunction;
 
 namespace Net.Issues.Console
 {
@@ -17,14 +18,15 @@ namespace Net.Issues.Console
             //new ConstructorSample().RunAsync().Wait();
             //new LoadAccountFromKeyStoreSample().GethAccount().Wait();
             //new ArrayUint256DynamicSample().RunAsync().Wait();
-            new PendingTransactionsSample().RunAsync().Wait();
+            //new PendingTransactionsSample().RunAsync().Wait();
             //new StructReturnDataSample().RunAsync().Wait();
             //new ProxySample().RunAsync().Wait();
             //new EventsSample().RunAsync().Wait();
             //new Erc20BalanceChecker().RunAsync().Wait();
             //new FindTransacactionsForAddress().RunAsync().Wait();
+            new CallingOnlyOwnerFunctionSample().RunAsync().Wait();
 
-            
+
         }
     }
 }
