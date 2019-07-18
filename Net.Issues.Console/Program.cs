@@ -25,8 +25,10 @@ namespace Net.Issues.Console
             //new EventsSample().RunAsync().Wait();
             //new Erc20BalanceChecker().RunAsync().Wait();
             //new FindTransacactionsForAddress().RunAsync().Wait();
-            new CallingOnlyOwnerFunctionSample().RunAsync().Wait();
+            //new CallingOnlyOwnerFunctionSample().RunAsync().Wait();
             //new PayableEtherTransfer().RunAsync().Wait();            
+
+            new RetrievingAFailedTransaction.RetrievingAFailedTransactionSample().RunAsync().Wait();
         }
     }
 }
