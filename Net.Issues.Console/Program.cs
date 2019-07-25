@@ -7,6 +7,7 @@ using Net.Issues.Console.Erc20BalanceCheckerSample;
 using Net.Issues.Console.FindTransactionsForAddress;
 using Net.Issues.Console.PayableEtherTransferSample;
 using Net.Issues.Console.CallingOnlyOwnerFunction;
+using Net.Issues.Console.Bytes32ArraySample;
 
 namespace Net.Issues.Console
 {
@@ -27,8 +28,8 @@ namespace Net.Issues.Console
             //new FindTransacactionsForAddress().RunAsync().Wait();
             //new CallingOnlyOwnerFunctionSample().RunAsync().Wait();
             //new PayableEtherTransfer().RunAsync().Wait();            
-
-            new RetrievingAFailedTransaction.RetrievingAFailedTransactionSample().RunAsync().Wait();
+            //new RetrievingAFailedTransaction.RetrievingAFailedTransactionSample().RunAsync().Wait();
+            new Bytes32Array().RunAsync().Wait();
         }
     }
 }
